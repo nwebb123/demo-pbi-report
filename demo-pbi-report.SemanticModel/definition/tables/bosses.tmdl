@@ -1,0 +1,75 @@
+table bosses
+	lineageTag: cdbe54f2-0173-4a89-a5f8-e43b05e2ac32
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: b15a3b5c-115b-4a13-a760-40330a949af5
+		summarizeBy: sum
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column name
+		dataType: string
+		lineageTag: 7fe3805c-0b36-4f64-b550-118ee3ccad60
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column image
+		dataType: string
+		lineageTag: 99e6df1f-7be0-49d1-b010-62f58af0d870
+		summarizeBy: none
+		sourceColumn: image
+
+		annotation SummarizationSetBy = Automatic
+
+	column HP
+		dataType: string
+		lineageTag: 4c802d96-1ca5-4926-91ad-b99c5426568d
+		summarizeBy: none
+		sourceColumn: HP
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Locations & Drops'
+		dataType: string
+		lineageTag: 9014ea86-6516-40ba-87b0-904f22d8a909
+		summarizeBy: none
+		sourceColumn: Locations & Drops
+
+		annotation SummarizationSetBy = Automatic
+
+	column blockquote
+		dataType: string
+		lineageTag: 4e1eb9b1-0191-462b-b401-68ec4b227ffe
+		summarizeBy: none
+		sourceColumn: blockquote
+
+		annotation SummarizationSetBy = Automatic
+
+	column dlc
+		dataType: int64
+		formatString: 0
+		lineageTag: daf2fa7f-855d-41ac-8448-999b4779edb0
+		summarizeBy: sum
+		sourceColumn: dlc
+
+		annotation SummarizationSetBy = Automatic
+
+	partition bosses = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\nwebb\Documents\power_bi_projects\Elden_Ring_PBI\Elden_Ring_Dataset\bosses.csv"),[Delimiter=",", Columns=7, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"id", Int64.Type}, {"name", type text}, {"image", type text}, {"HP", type text}, {"Locations & Drops", type text}, {"blockquote", type text}, {"dlc", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

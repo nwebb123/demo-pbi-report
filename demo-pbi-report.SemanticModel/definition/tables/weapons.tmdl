@@ -1,0 +1,124 @@
+table weapons
+	lineageTag: 09d72bb3-6e09-4532-a793-541364eb2528
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: bfcce5ce-84b4-410f-b4d5-430ee5215adb
+		summarizeBy: sum
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column weapon_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 84d0837e-a2d9-4b9b-9d39-cb12fa7d2e35
+		summarizeBy: sum
+		sourceColumn: weapon_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column name
+		dataType: string
+		lineageTag: 26ec5b95-b2de-4268-bf63-9a1d7885c9d2
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column image
+		dataType: string
+		lineageTag: d9d1879c-f895-488a-af42-c79a236d4b07
+		summarizeBy: none
+		sourceColumn: image
+
+		annotation SummarizationSetBy = Automatic
+
+	column weight
+		dataType: double
+		lineageTag: a5d405f6-aad9-4232-9c2a-279ee094f290
+		summarizeBy: sum
+		sourceColumn: weight
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column description
+		dataType: string
+		lineageTag: f16e8c65-706a-47c3-907e-a152b47c94cc
+		summarizeBy: none
+		sourceColumn: description
+
+		annotation SummarizationSetBy = Automatic
+
+	column dlc
+		dataType: int64
+		formatString: 0
+		lineageTag: 553ef287-3dc4-454d-97b0-cd5dfc796a33
+		summarizeBy: sum
+		sourceColumn: dlc
+
+		annotation SummarizationSetBy = Automatic
+
+	column requirements
+		dataType: string
+		lineageTag: 8be1fb9e-7976-4cbc-8a16-5357e0a186f6
+		summarizeBy: none
+		sourceColumn: requirements
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'damage type'
+		dataType: string
+		lineageTag: caa987bd-c12b-48a1-9779-80820efd41ff
+		summarizeBy: none
+		sourceColumn: damage type
+
+		annotation SummarizationSetBy = Automatic
+
+	column category
+		dataType: string
+		lineageTag: 07d1b426-42de-4d58-9b48-70417fa8c592
+		summarizeBy: none
+		sourceColumn: category
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'passive effect'
+		dataType: string
+		lineageTag: 0f0f2487-1660-40a7-b885-26851fc3f441
+		summarizeBy: none
+		sourceColumn: passive effect
+
+		annotation SummarizationSetBy = Automatic
+
+	column skill
+		dataType: string
+		lineageTag: efeaa549-7422-42cb-a31b-a9803c67a29a
+		summarizeBy: none
+		sourceColumn: skill
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'FP cost'
+		dataType: string
+		lineageTag: f98419b0-5a19-4bdd-b52f-f86035fe850f
+		summarizeBy: none
+		sourceColumn: FP cost
+
+		annotation SummarizationSetBy = Automatic
+
+	partition weapons = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\nwebb\Documents\power_bi_projects\Elden_Ring_PBI\Elden_Ring_Dataset\weapons.csv"),[Delimiter=",", Columns=13, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"id", Int64.Type}, {"weapon_id", Int64.Type}, {"name", type text}, {"image", type text}, {"weight", type number}, {"description", type text}, {"dlc", Int64.Type}, {"requirements", type text}, {"damage type", type text}, {"category", type text}, {"passive effect", type text}, {"skill", type text}, {"FP cost", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
