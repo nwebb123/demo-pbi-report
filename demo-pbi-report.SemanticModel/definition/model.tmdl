@@ -16,6 +16,7 @@ annotation PBI_ProTooling = ["DevMode"]
 
 ref table bosses
 ref table weapons
+ref table Measures_Container
 
 ref cultureInfo en-US
 
