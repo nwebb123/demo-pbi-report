@@ -1,0 +1,21 @@
+table Measures_Container
+	lineageTag: 814e15a0-d719-41e4-9f7a-6874efd9d9f6
+
+	measure 'Boss Chart Label' = "Bosses in Elden Ring and their HP"
+		lineageTag: 43ecdf8c-d401-40be-a123-289d012e015d
+
+	column Column
+		formatString: 0
+		lineageTag: 4a574231-7d94-4f90-8e9a-a3cc74ec6649
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Measures_Container = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = 9bd47e18c7f84edaaeb558e4c3c1a0b5
+
