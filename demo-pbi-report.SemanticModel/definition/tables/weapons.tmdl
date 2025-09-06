@@ -30,6 +30,7 @@ table weapons
 	column image
 		dataType: string
 		lineageTag: d9d1879c-f895-488a-af42-c79a236d4b07
+		dataCategory: ImageUrl
 		summarizeBy: none
 		sourceColumn: image
 

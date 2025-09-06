@@ -132,16 +132,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "label": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
 			          "tag": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -266,6 +256,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "Boss Image": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -658,16 +658,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "label": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
 			          "tag": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -678,7 +668,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Choose a Weapon": {
+			          "Select a Weapon": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -802,6 +792,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          ".": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -1617,102 +1617,389 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "measures_container": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measures_Container"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "measures container": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "measure container": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "Measures_Container": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "container": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "measure ampule": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "measure vessel": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "measure flask": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "measure ampoule": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "ampule": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "vessel": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "flask": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "ampoule": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "measure bottle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "bottle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "measures_container.column": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measures_Container",
+			          "ConceptualProperty": "Column"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pilaster": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pillar": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "post": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "support": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "stake": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "pole": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "buttress": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "underpinning": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "contribution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "measures_container.boss_chart_label": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measures_Container",
+			          "ConceptualProperty": "Boss Chart Label"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "boss chart label": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "label": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "chart label": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "boss chart sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "chart sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "boss chart tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "boss chart decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "chart tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "chart decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "boss chart name tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.604
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "boss_is_named_id": {
-			      "Binding": {
-			        "ConceptualEntity": "bosses"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "boss": {
-			          "Target": {
-			            "Entity": "boss"
-			          }
-			        },
-			        "boss.id": {
-			          "Target": {
-			            "Entity": "boss.id"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "boss"
-			            },
-			            "Name": {
-			              "Role": "boss.id"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "ids_are_names_IDs_of_bosses"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "boss"
-			            },
-			            "Object": {
-			              "Role": "boss.id"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "bosses_have_ids"
-			        }
-			      ]
-			    },
-			    "boss_is_named_name": {
-			      "Binding": {
-			        "ConceptualEntity": "bosses"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "boss": {
-			          "Target": {
-			            "Entity": "boss"
-			          }
-			        },
-			        "boss.name": {
-			          "Target": {
-			            "Entity": "boss.name"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "boss"
-			            },
-			            "Name": {
-			              "Role": "boss.name"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "names_are_names_IDs_of_bosses"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "boss"
-			            },
-			            "Object": {
-			              "Role": "boss.name"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "bosses_have_names"
-			        }
-			      ]
-			    },
-			    "weapon_is_named_id": {
+			    "weapon_has_damage_type": {
 			      "Binding": {
 			        "ConceptualEntity": "weapons"
 			      },
@@ -1723,42 +2010,29 @@ cultureInfo en-US
 			            "Entity": "weapon"
 			          }
 			        },
-			        "weapon.id": {
+			        "weapon.damage_type": {
 			          "Target": {
-			            "Entity": "weapon.id"
+			            "Entity": "weapon.damage_type"
 			          }
 			        }
 			      },
 			      "Phrasings": [
-			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "weapon"
-			            },
-			            "Name": {
-			              "Role": "weapon.id"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "ids_are_names_IDs_of_weapons"
-			        },
 			        {
 			          "Attribute": {
 			            "Subject": {
 			              "Role": "weapon"
 			            },
 			            "Object": {
-			              "Role": "weapon.id"
+			              "Role": "weapon.damage_type"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "weapons_have_ids"
+			          "ID": "weapons_have_damage_types"
 			        }
 			      ]
 			    },
-			    "weapon_is_named_weapon_id": {
+			    "weapon_has_requirement": {
 			      "Binding": {
 			        "ConceptualEntity": "weapons"
 			      },
@@ -1769,42 +2043,29 @@ cultureInfo en-US
 			            "Entity": "weapon"
 			          }
 			        },
-			        "weapon.weapon_id": {
+			        "weapon.requirement": {
 			          "Target": {
-			            "Entity": "weapon.weapon_id"
+			            "Entity": "weapon.requirement"
 			          }
 			        }
 			      },
 			      "Phrasings": [
-			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "weapon"
-			            },
-			            "Name": {
-			              "Role": "weapon.weapon_id"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "weapon_ids_are_names_IDs_of_weapons"
-			        },
 			        {
 			          "Attribute": {
 			            "Subject": {
 			              "Role": "weapon"
 			            },
 			            "Object": {
-			              "Role": "weapon.weapon_id"
+			              "Role": "weapon.requirement"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "weapons_have_weapon_ids"
+			          "ID": "weapons_have_requirements"
 			        }
 			      ]
 			    },
-			    "weapon_is_named_name": {
+			    "weapon_has_dlc": {
 			      "Binding": {
 			        "ConceptualEntity": "weapons"
 			      },
@@ -1815,42 +2076,62 @@ cultureInfo en-US
 			            "Entity": "weapon"
 			          }
 			        },
-			        "weapon.name": {
+			        "weapon.dlc": {
 			          "Target": {
-			            "Entity": "weapon.name"
+			            "Entity": "weapon.dlc"
 			          }
 			        }
 			      },
 			      "Phrasings": [
-			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "weapon"
-			            },
-			            "Name": {
-			              "Role": "weapon.name"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "names_are_names_IDs_of_weapons"
-			        },
 			        {
 			          "Attribute": {
 			            "Subject": {
 			              "Role": "weapon"
 			            },
 			            "Object": {
-			              "Role": "weapon.name"
+			              "Role": "weapon.dlc"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "weapons_have_names"
+			          "ID": "weapons_have_dlcs"
 			        }
 			      ]
 			    },
-			    "weapon_is_heavy": {
+			    "weapon_has_description": {
+			      "Binding": {
+			        "ConceptualEntity": "weapons"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weapon": {
+			          "Target": {
+			            "Entity": "weapon"
+			          }
+			        },
+			        "weapon.description": {
+			          "Target": {
+			            "Entity": "weapon.description"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weapon"
+			            },
+			            "Object": {
+			              "Role": "weapon.description"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weapons_have_descriptions"
+			        }
+			      ]
+			    },
+			    "weapon_has_weight": {
 			      "Binding": {
 			        "ConceptualEntity": "weapons"
 			      },
@@ -1868,6 +2149,19 @@ cultureInfo en-US
 			        }
 			      },
 			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weapon"
+			            },
+			            "Object": {
+			              "Role": "weapon.weight"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weapons_have_weights"
+			        },
 			        {
 			          "Adjective": {
 			            "Subject": {
@@ -1894,19 +2188,434 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "weight_indicates_how_heavy_weapons_are"
+			        }
+			      ]
+			    },
+			    "weapon_has_image": {
+			      "Binding": {
+			        "ConceptualEntity": "weapons"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weapon": {
+			          "Target": {
+			            "Entity": "weapon"
+			          }
 			        },
+			        "weapon.image": {
+			          "Target": {
+			            "Entity": "weapon.image"
+			          }
+			        }
+			      },
+			      "Phrasings": [
 			        {
 			          "Attribute": {
 			            "Subject": {
 			              "Role": "weapon"
 			            },
 			            "Object": {
-			              "Role": "weapon.weight"
+			              "Role": "weapon.image"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "weapons_have_weights"
+			          "ID": "weapons_have_images"
+			        }
+			      ]
+			    },
+			    "weapon_has_name": {
+			      "Binding": {
+			        "ConceptualEntity": "weapons"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weapon": {
+			          "Target": {
+			            "Entity": "weapon"
+			          }
+			        },
+			        "weapon.name": {
+			          "Target": {
+			            "Entity": "weapon.name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weapon"
+			            },
+			            "Object": {
+			              "Role": "weapon.name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weapons_have_names"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "weapon"
+			            },
+			            "Name": {
+			              "Role": "weapon.name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "names_are_names_IDs_of_weapons"
+			        }
+			      ]
+			    },
+			    "weapon_has_weapon_id": {
+			      "Binding": {
+			        "ConceptualEntity": "weapons"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weapon": {
+			          "Target": {
+			            "Entity": "weapon"
+			          }
+			        },
+			        "weapon.weapon_id": {
+			          "Target": {
+			            "Entity": "weapon.weapon_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weapon"
+			            },
+			            "Object": {
+			              "Role": "weapon.weapon_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weapons_have_weapon_ids"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "weapon"
+			            },
+			            "Name": {
+			              "Role": "weapon.weapon_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weapon_ids_are_names_IDs_of_weapons"
+			        }
+			      ]
+			    },
+			    "weapon_has_id": {
+			      "Binding": {
+			        "ConceptualEntity": "weapons"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "weapon": {
+			          "Target": {
+			            "Entity": "weapon"
+			          }
+			        },
+			        "weapon.id": {
+			          "Target": {
+			            "Entity": "weapon.id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weapon"
+			            },
+			            "Object": {
+			              "Role": "weapon.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weapons_have_ids"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "weapon"
+			            },
+			            "Name": {
+			              "Role": "weapon.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ids_are_names_IDs_of_weapons"
+			        }
+			      ]
+			    },
+			    "boss_has_dlc": {
+			      "Binding": {
+			        "ConceptualEntity": "bosses"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "boss": {
+			          "Target": {
+			            "Entity": "boss"
+			          }
+			        },
+			        "boss.dlc": {
+			          "Target": {
+			            "Entity": "boss.dlc"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "boss"
+			            },
+			            "Object": {
+			              "Role": "boss.dlc"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "bosses_have_dlcs"
+			        }
+			      ]
+			    },
+			    "boss_has_blockquote": {
+			      "Binding": {
+			        "ConceptualEntity": "bosses"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "boss": {
+			          "Target": {
+			            "Entity": "boss"
+			          }
+			        },
+			        "boss.blockquote": {
+			          "Target": {
+			            "Entity": "boss.blockquote"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "boss"
+			            },
+			            "Object": {
+			              "Role": "boss.blockquote"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "bosses_have_blockquotes"
+			        }
+			      ]
+			    },
+			    "boss_has_locations__drop": {
+			      "Binding": {
+			        "ConceptualEntity": "bosses"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "boss": {
+			          "Target": {
+			            "Entity": "boss"
+			          }
+			        },
+			        "boss.locations__drop": {
+			          "Target": {
+			            "Entity": "boss.locations__drop"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "boss"
+			            },
+			            "Object": {
+			              "Role": "boss.locations__drop"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "bosses_have_locations__drops"
+			        }
+			      ]
+			    },
+			    "boss_has_hp": {
+			      "Binding": {
+			        "ConceptualEntity": "bosses"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "boss": {
+			          "Target": {
+			            "Entity": "boss"
+			          }
+			        },
+			        "boss.hp": {
+			          "Target": {
+			            "Entity": "boss.hp"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "boss"
+			            },
+			            "Object": {
+			              "Role": "boss.hp"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "bosses_have_hp"
+			        }
+			      ]
+			    },
+			    "boss_has_image": {
+			      "Binding": {
+			        "ConceptualEntity": "bosses"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "boss": {
+			          "Target": {
+			            "Entity": "boss"
+			          }
+			        },
+			        "boss.image": {
+			          "Target": {
+			            "Entity": "boss.image"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "boss"
+			            },
+			            "Object": {
+			              "Role": "boss.image"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "bosses_have_images"
+			        }
+			      ]
+			    },
+			    "boss_has_name": {
+			      "Binding": {
+			        "ConceptualEntity": "bosses"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "boss": {
+			          "Target": {
+			            "Entity": "boss"
+			          }
+			        },
+			        "boss.name": {
+			          "Target": {
+			            "Entity": "boss.name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "boss"
+			            },
+			            "Object": {
+			              "Role": "boss.name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "bosses_have_names"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "boss"
+			            },
+			            "Name": {
+			              "Role": "boss.name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "names_are_names_IDs_of_bosses"
+			        }
+			      ]
+			    },
+			    "boss_has_id": {
+			      "Binding": {
+			        "ConceptualEntity": "bosses"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "boss": {
+			          "Target": {
+			            "Entity": "boss"
+			          }
+			        },
+			        "boss.id": {
+			          "Target": {
+			            "Entity": "boss.id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "boss"
+			            },
+			            "Object": {
+			              "Role": "boss.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "bosses_have_ids"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "boss"
+			            },
+			            "Name": {
+			              "Role": "boss.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ids_are_names_IDs_of_bosses"
 			        }
 			      ]
 			    },
@@ -1955,333 +2664,35 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "boss_has_image": {
+			    "measures_container_contain": {
 			      "Binding": {
-			        "ConceptualEntity": "bosses"
+			        "ConceptualEntity": "Measures_Container"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "boss": {
+			        "measures_container": {
 			          "Target": {
-			            "Entity": "boss"
-			          }
-			        },
-			        "boss.image": {
-			          "Target": {
-			            "Entity": "boss.image"
+			            "Entity": "measures_container"
 			          }
 			        }
 			      },
 			      "Phrasings": [
 			        {
-			          "Attribute": {
+			          "Verb": {
 			            "Subject": {
-			              "Role": "boss"
+			              "Role": "measures_container"
 			            },
-			            "Object": {
-			              "Role": "boss.image"
-			            }
+			            "Verbs": [
+			              {
+			                "contain": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ]
 			          },
 			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "bosses_have_images"
-			        }
-			      ]
-			    },
-			    "boss_has_hp": {
-			      "Binding": {
-			        "ConceptualEntity": "bosses"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "boss": {
-			          "Target": {
-			            "Entity": "boss"
-			          }
-			        },
-			        "boss.hp": {
-			          "Target": {
-			            "Entity": "boss.hp"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "boss"
-			            },
-			            "Object": {
-			              "Role": "boss.hp"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "bosses_have_hp"
-			        }
-			      ]
-			    },
-			    "boss_has_locations__drop": {
-			      "Binding": {
-			        "ConceptualEntity": "bosses"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "boss": {
-			          "Target": {
-			            "Entity": "boss"
-			          }
-			        },
-			        "boss.locations__drop": {
-			          "Target": {
-			            "Entity": "boss.locations__drop"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "boss"
-			            },
-			            "Object": {
-			              "Role": "boss.locations__drop"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "bosses_have_locations__drops"
-			        }
-			      ]
-			    },
-			    "boss_has_blockquote": {
-			      "Binding": {
-			        "ConceptualEntity": "bosses"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "boss": {
-			          "Target": {
-			            "Entity": "boss"
-			          }
-			        },
-			        "boss.blockquote": {
-			          "Target": {
-			            "Entity": "boss.blockquote"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "boss"
-			            },
-			            "Object": {
-			              "Role": "boss.blockquote"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "bosses_have_blockquotes"
-			        }
-			      ]
-			    },
-			    "boss_has_dlc": {
-			      "Binding": {
-			        "ConceptualEntity": "bosses"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "boss": {
-			          "Target": {
-			            "Entity": "boss"
-			          }
-			        },
-			        "boss.dlc": {
-			          "Target": {
-			            "Entity": "boss.dlc"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "boss"
-			            },
-			            "Object": {
-			              "Role": "boss.dlc"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "bosses_have_dlcs"
-			        }
-			      ]
-			    },
-			    "weapon_has_image": {
-			      "Binding": {
-			        "ConceptualEntity": "weapons"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "weapon": {
-			          "Target": {
-			            "Entity": "weapon"
-			          }
-			        },
-			        "weapon.image": {
-			          "Target": {
-			            "Entity": "weapon.image"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "weapon"
-			            },
-			            "Object": {
-			              "Role": "weapon.image"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "weapons_have_images"
-			        }
-			      ]
-			    },
-			    "weapon_has_description": {
-			      "Binding": {
-			        "ConceptualEntity": "weapons"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "weapon": {
-			          "Target": {
-			            "Entity": "weapon"
-			          }
-			        },
-			        "weapon.description": {
-			          "Target": {
-			            "Entity": "weapon.description"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "weapon"
-			            },
-			            "Object": {
-			              "Role": "weapon.description"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "weapons_have_descriptions"
-			        }
-			      ]
-			    },
-			    "weapon_has_dlc": {
-			      "Binding": {
-			        "ConceptualEntity": "weapons"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "weapon": {
-			          "Target": {
-			            "Entity": "weapon"
-			          }
-			        },
-			        "weapon.dlc": {
-			          "Target": {
-			            "Entity": "weapon.dlc"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "weapon"
-			            },
-			            "Object": {
-			              "Role": "weapon.dlc"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "weapons_have_dlcs"
-			        }
-			      ]
-			    },
-			    "weapon_has_requirement": {
-			      "Binding": {
-			        "ConceptualEntity": "weapons"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "weapon": {
-			          "Target": {
-			            "Entity": "weapon"
-			          }
-			        },
-			        "weapon.requirement": {
-			          "Target": {
-			            "Entity": "weapon.requirement"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "weapon"
-			            },
-			            "Object": {
-			              "Role": "weapon.requirement"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "weapons_have_requirements"
-			        }
-			      ]
-			    },
-			    "weapon_has_damage_type": {
-			      "Binding": {
-			        "ConceptualEntity": "weapons"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "weapon": {
-			          "Target": {
-			            "Entity": "weapon"
-			          }
-			        },
-			        "weapon.damage_type": {
-			          "Target": {
-			            "Entity": "weapon.damage_type"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "weapon"
-			            },
-			            "Object": {
-			              "Role": "weapon.damage_type"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "weapons_have_damage_types"
+			          "Weight": 0.75,
+			          "ID": "measures_containers_contain"
 			        }
 			      ]
 			    },
@@ -2414,6 +2825,72 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "weapons_have_FP_costs"
+			        }
+			      ]
+			    },
+			    "measures_container_has_column": {
+			      "Binding": {
+			        "ConceptualEntity": "Measures_Container"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "measures_container": {
+			          "Target": {
+			            "Entity": "measures_container"
+			          }
+			        },
+			        "measures_container.column": {
+			          "Target": {
+			            "Entity": "measures_container.column"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "measures_container"
+			            },
+			            "Object": {
+			              "Role": "measures_container.column"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "measures_containers_have_columns"
+			        }
+			      ]
+			    },
+			    "measures_container_has_boss_chart_label": {
+			      "Binding": {
+			        "ConceptualEntity": "Measures_Container"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "measures_container": {
+			          "Target": {
+			            "Entity": "measures_container"
+			          }
+			        },
+			        "measures_container.boss_chart_label": {
+			          "Target": {
+			            "Entity": "measures_container.boss_chart_label"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "measures_container"
+			            },
+			            "Object": {
+			              "Role": "measures_container.boss_chart_label"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "measures_containers_have_boss_chart_label"
 			        }
 			      ]
 			    }
