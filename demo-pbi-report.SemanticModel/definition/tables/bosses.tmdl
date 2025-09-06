@@ -21,6 +21,7 @@ table bosses
 	column image
 		dataType: string
 		lineageTag: 99e6df1f-7be0-49d1-b010-62f58af0d870
+		dataCategory: ImageUrl
 		summarizeBy: none
 		sourceColumn: image
 
